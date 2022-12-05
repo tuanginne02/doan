@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gin_Shop</title>
+    <link rel="icon" type="image/x-icon" href="./assets/img/Logo_Shop.jpg" />
+    <link rel="stylesheet" href="./assets/css/message.css" />
+    <link rel="stylesheet" href="/FontEnd/assets/css/" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/grid.css" />
+    <link rel="stylesheet" href="./assets/css/footerClist.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="appGin">
+      <!-- Header -->
+      <header class="header">
+        <div class="grid wide search__width--tablet">
+          <nav class="navbar hide-on-mobile-tablet">
+            <!-- ul right -->
+            <ul class="navbar__list">
+              <li
+                class="navbar--items navbar--items-has-qr navbar--items-seperate"
+              >
+                Kênh Người Bán
+              </li>
+              <li class="navbar--items navbar--items-seperate">
+                Người bán Shopee
+              </li>
+              <li
+                class="navbar--items navbar--items-has-qr navbar--items-seperate"
+              >
+                Tải ứng dụng
+                <div class="navbar__QR">
+                  <div class="qr_lenh"></div>
+                  <img
+                    src="./assets/img/qr_fb.jpg"
+                    alt="QR Code"
+                    class="qr-img"
+                  />
+                  <div class="qr__apps">
+                    <a href="" class="qr__link">
+                      <img
+                        src="./assets/img/gg_store.png"
+                        alt="Google Play"
+                        class="qr__dowload--img"
+                      />
+                    </a>
+                    <a href="" class="qr__link">
+                      <img
+                        src="./assets/img/app_store.png"
+                        alt="App Store"
+                        class="qr__dowload--img"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </li>
+              <li class="navbar--items">
+                <span class="navbar--title-no-poiter">Kết Nối</span>
+                <a
+                  href="https://www.facebook.com/gin.tuan.072"
+                  class="navbar--icon-link"
+                  ><i class="navbar--icon fa-brands fa-facebook"></i
+                ></a>
+                <a href="https://github.com/TuanGinNe" class="navbar--icon-link"
+                  ><i class="navbar--icon fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+            <!-- ul left -->
+            <ul class="navbar__list">
+              <li class="navbar--items navbar--items-half-notify">
+                <a href="##" class="navbar--items-link">
+                  <i class="navbar--icon fa-solid fa-bell"></i>Thông Báo</a
+                >
+                <!-- Information -->
+                <div class="navbar__notify">
+                  <header class="notify__header submit-logged">
+                    <!-- đã đăng nhập -->
+                    <h3>Thông Báo Mới Nhận!!!</h3>
+
+                    <ul class="notify__list">
+                      <li
+                        class="notify__list--items notify__list--items-viewed"
+                      >
+                        <a href="" class="notify--link">
+                          <img
+                            width="invalid-value"
+                            height="invalid-value"
+                            alt="Loa bluetooth mini không dây nghe nhạc, cắm usb thẻ nhớ đa năng có đèn led chính hãng - MINPRO"
+                            class="notify--img"
+                            style="object-fit: contain"
+                            src="https://cf.shopee.vn/file/6cbf33b1074174ec070c722bf29f81c5_tn"
+                          />
+                          <div class="notify--info">
+                            <span class="notify--name"
+                              >VOUCHER GIẢM ĐẾN 20K SẮP HẾT</span
+                            >
+                            <span class="notify--information"
+                              ><i class="fa-solid fa-hand-point-right"></i> Số
+                              Lượng có Hạn - Chớp Ngay Kẻo Hết</span
+                            >
+                          </div>
+                        </a>
+                      </li>
+                    </ul>
+                    <footer class="notify__footer">
+                      <a href="" class="notify__footer--btn">Xem Tất Cả</a>
+                    </footer>
+                  </header>
+
+                  <!-- chưa đăng nhập -->
+                  <div class="un-logged unsubmit-logged">
+                    <ul class="notify__list_noinformation">
+                      <div class="list-noinformation">
+                        <img
+                          src="./assets/img/logoSp/img_information.png"
+                          alt=""
+                        />
+                        <p>Đăng nhập để nhận thông báo</p>
+                      </div>
+                    </ul>
+                    <footer class="notify__footer-no">
+                      <a class="notify__footer--btn-no notify__login"
+                        >Đăng nhập</a
+                      >
+                      <a class="notify__footer--btn-no notify__register"
+                        >Đăng ký</a
+                      >
+                    </footer>
+                  </div>
+                </div>
+              </li>
+
+              <li class="navbar--items">
+                <a
+                  href="https://help.shopee.vn/portal"
+                  class="navbar--items-link"
+                >
+                  <i class="navbar--icon fa-regular fa-circle-question"></i> Trợ
+                  Giúp</a
+                >
+              </li>
+
+              <li class="navbar--items item-language">
+                <a href="" class="navbar--items-link language-vn">
+                  <i class="navbar--icon fa-solid fa-globe"></i> Tiếng Việt
+                </a>
+
+                <a href="" class="navbar--items-link language-el">
+                  <i class="navbar--icon fa-solid fa-globe"></i> Tiếng Anh
+                </a>
+                <div class="language">
+                  <p class="p-vn">Tiếng Việt</p>
+                  <p class="p-el">Tiếng Anh</p>
+                </div>
+              </li>
+
+              <div class="base-modal_register__login user-no-submit">
+                <li
+                  class="navbar--items navbar--items-seperate navbar--items-bold register"
+                >
+                  Đăng Ký
+                </li>
+                <li class="navbar--items navbar--items-bold login">
+                  Đăng Nhập
+                </li>
+              </div>
+              <!-- <button onclick="myFunction()">Toggle dark mode</button> -->
+
+              <!-- User Đăng Nhập & Đăng ký -->
+              <div class="user-submit">
+                <li class="navbar--item navbar--user">
+                  <img
+                    src="./assets/img/userLogo.png"
+                    alt="user"
+                    class="navbar--user-avatar"
+                  />
+                  <span class="navbar--user-name">Tu Quoc Tuan</span>
+
+                  <ul class="navbar--user-menu">
+                    <li class="navbar--user-menu-item">
+                      <a href="">Tài Khoản Của Tôi</a>
+                    </li>
+                    <li class="navbar--user-menu-item">
+                      <a href="">Địa Chỉ Của Tôi</a>
+                    </li>
+                    <li class="navbar--user-menu-item">
+                      <a href="">Đơn Mua</a>
+                    </li>
+                    <li
+                      class="navbar--user-menu-item navbar--user-menu-item-separate"
+                    >
+                      <a href="##" class="exit-user">Đăng Xuất</a>
+                    </li>
+                  </ul>
+                </li>
+              </div>
+            </ul>
+          </nav>
+
+          <!--Hearder with Search -->
+          <div class="header__with_search">
+            <div class="header_logo--link hide-on-tablet hide-on-mobile">
+              <a href="#" class="">
+                <img
+                  class="header_logo-img"
+                  src="./assets/img/logoSp/shopee_logo.png"
+                  alt=""
+                />
+              </a>
+            </div>
+            <div class="all--search">
+              <div class="header_search">
+                <div class="header_search--input-wrap">
+                  <input
+                    type="text"
+                    id="search-input"
+                    value=""
+                    class="header_search--input"
+                    placeholder="Bạn muốn tìm gì?"
+                  />
+                  <div class="header_search-history">
+                    <h3 class="header_search-history-heading">
+                      Lịch Sử Tìm Kiếm
+                    </h3>
+                    <ul class="header_search-history-list">
+                      <li class="header_search-history-items" id="newItems">
+                        <a href="">Thời Trang</a>
+                        <a href="">Công Nghệ</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="header_search--select">
+                  <span class="header_search--select-lable in-shops">
+                    Trong Shop
+                    <i
+                      class="fa-solid fa-chevron-down header_search--select-icon"
+                    ></i>
+                  </span>
+
+                  <span class="header_search--select-lable outside-shops">
+                    Ngoài Shop
+                    <i
+                      class="fa-solid fa-chevron-down header_search--select-icon"
+                    ></i>
+                  </span>
+
+                  <ul class="header_search--option">
+                    <li class="header_search--option-item show-i in-shop">
+                      <span>Trong Shop</span>
+                      <i class="fa-solid fa-check i-inshop"></i>
+                    </li>
+                    <li class="header_search--option-item outside-shop">
+                      <span>Ngoài Shop</span>
+                      <i class="fa-solid fa-check i-outsideshop"></i>
+                    </li>
+                  </ul>
+                </div>
+                <button class="header_search--btn" id="btn-focus">
+                  <i
+                    class="header_search--btn-icon fa-solid fa-magnifying-glass"
+                  ></i>
+                </button>
+              </div>
+              <div class="list--items--into-search">
+                <a href="" class="items--into-search">Dép</a>
+                <a href="" class="items--into-search">Áo Khoác</a>
+                <a href="" class="items--into-search">Tú Xách Nữ</a>
+                <a href="" class="items--into-search">Áo Croptop</a>
+                <a href="" class="items--into-search">Váy</a>
+                <a href="" class="items--into-search">Ốp IPhone</a>
+                <a href="" class="items--into-search">Son</a>
+                <a href="" class="items--into-search">Áo Khoác Nam</a>
+              </div>
+            </div>
+
+            <!-- Cart Layout -->
+            <div class="header_cart">
+              <div class="header_cart--wrap">
+                <i class="cart--icon fa-solid fa-cart-shopping"></i>
+                <span class="header_cart--notice"></span>
+                <!-- No cart: cart--list-nomoney -->
+                <div class="cart--list">
+                  <div class="cart--item no-cart">
+                    <img
+                      src="./assets/img/no_cart.png"
+                      alt=""
+                      class="cart--nomoney-img"
+                    />
+                    <!-- <span class="cart--list-nomoney-mag"> Chưa Có Sản Phẩm </span> -->
+                  </div>
+
+                  <!-- The cart: cart--list-nomoney -->
+
+                  <ul class="cart--list-item money-cart">
+                    <h4 class="header_cart--heading">Sản Phẩm Đã Thêm</h4>
+
+                    <li class="cart--item">
+                      <img
+                        width="invalid-value"
+                        height="invalid-value"
+                        alt="Loa bluetooth mini không dây nghe nhạc, cắm usb thẻ nhớ đa năng có đèn led chính hãng - MINPRO"
+                        class="cart--item-img"
+                        style="object-fit: contain"
+                        src="https://cf.shopee.vn/file/6cbf33b1074174ec070c722bf29f81c5_tn"
+                      />
+                      <div class="cart--item-info">
+                        <div class="cart--item-head">
+                          <h5 class="cart--item-name">
+                            Loa bluetooth mini không dây nghe nhạc, cắm usb thẻ
+                            nhớ đa năng có đèn led chính hãng - MINPRO
+                          </h5>
+                          <div class="cart--item-price-wrap">
+                            <span class="cart--item-price">73.000</span>
+                            <span class="cart--item-mutify">x</span>
+                            <span class="cart--item-quantify">1</span>
+                          </div>
+                        </div>
+                        <div class="cart--item-body">
+                          <span class="cart--item-decscription"
+                            >Phân Loại Bạc</span
+                          >
+                          <span class="cart--item-remove">Xóa</span>
+                        </div>
+                      </div>
+                    </li>
+                    <a href="#" class="cart--view-cart btn btn--primary">
+                      Xem Giỏ Hàng
+                    </a>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- submit-tablet -->
+            <div class="tablet-regiseter-login tablet-no-submit">
+              <div class="base-modal_register__login user-no-submit">
+                <li
+                  class="navbar--items navbar--items-seperate navbar--items-bold tablet-register"
+                >
+                  Đăng Ký
+                </li>
+                <li class="navbar--items navbar--items-bold tablet-login">
+                  Đăng Nhập
+                </li>
+              </div>
+            </div>
+
+            <!-- User Đăng Nhập & Đăng ký Tablet -->
+            <div class="tablet-user-submit tablet-user-submit">
+              <li class="navbar--item navbar--user">
+                <img
+                  src="./assets/img/userLogo.png"
+                  alt="user"
+                  class="navbar--user-avatar"
+                />
+                <span class="navbar--user-name">Tu Quoc Tuan</span>
+
+                <ul class="navbar--user-menu">
+                  <li class="navbar--user-menu-item">
+                    <a href="">Tài Khoản Của Tôi</a>
+                  </li>
+                  <li class="navbar--user-menu-item">
+                    <a href="">Địa Chỉ Của Tôi</a>
+                  </li>
+                  <li class="navbar--user-menu-item">
+                    <a href="">Đơn Mua</a>
+                  </li>
+                  <li
+                    class="navbar--user-menu-item navbar--user-menu-item-separate"
+                  >
+                    <a href="##" class="tablet-exit-user">Đăng Xuất</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+            <!-- User Đăng Nhập & Đăng ký Mobile -->
+            <div class="mobile-user-submit">
+              <li class="navbar--item navbar--user">
+                <img
+                  src="./assets/img/userLogo.png"
+                  alt="user"
+                  class="navbar--user-avatar"
+                />
+                <!-- <span class="navbar--user-name">Tu Quoc Tuan</span>
+   -->
+                <ul class="navbar--user-menu">
+                  <li class="navbar--user-menu-item">
+                    <a href="">Tài Khoản Của Tôi</a>
+                  </li>
+                  <li class="navbar--user-menu-item">
+                    <a href="">Địa Chỉ Của Tôi</a>
+                  </li>
+                  <li class="navbar--user-menu-item">
+                    <a href="">Đơn Mua</a>
+                  </li>
+                  <li
+                    class="navbar--user-menu-item navbar--user-menu-item-separate"
+                  >
+                    <a href="##" class="mobile-exit-user">Đăng Xuất</a>
+                  </li>
+                </ul>
+              </li>
+            </div>
+          </div>
+        </div>
+
+        <!--Hearder with Search Mobile-->
+        <div class="header__sort_bar">
+          <div id="lilienquan" class="sort__bar_item tab--active">
+            <a
+              id="lienquan"
+              href="##"
+              class="sort__bar_item--link sort__bar_item--active"
+              >Liên Quan</a
+            >
+          </div>
+          <div id="limoinhat" class="sort__bar_item">
+            <a id="moinhat" href="##" class="sort__bar_item--link">Mới Nhất</a>
+          </div>
+          <div id="libanchay" class="sort__bar_item">
+            <a id="banchay" href="##" class="sort__bar_item--link">Bán Chạy</a>
+          </div>
+          <div id="ligia" class="sort__bar_item">
+            <a id="gia" href="##" class="sort__bar_item--link">Giá</a>
+          </div>
+          <div class="tab__line"></div>
+        </div>
+      </header>
+
+      <!-- Container -->
+      <div class="container">
+        <div class="grid wide">
+          <div class="grid">
+            <!-- link header -->
+            <div class="list_link--items">
+              <a href="" class="link--item">shoppe</a>
+              <a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a
+              ><a href="" class="link--item">shoppe</a>
+            </div>
+            <div class="row sm-gutter grid__content">
+              <div class="col l-4">
+                <div class="image__sp--big">
+                  <div class="img--big_1">
+                    <a href="" class="img-big">
+                      <video autoplay src="https://cvf.shopee.vn/file/1138b7bc0fc5bef61936496807ab8a00"></video>
+                    </a>
+                  </div>
+                  <div class="img--big_2">
+                    <a href="" class="img-big"></a>
+                  </div>
+                  <div class="img--big_3">
+                    <a href="" class="img-big"></a>
+                  </div>
+                  <div class="img--big_4">
+                    <a href="" class="img-big"></a>
+                  </div>
+                  <div class="img--big_5">
+                    <a href="" class="img-big"></a>
+                  </div>
+
+                </div>
+                <div class="image__sp--small">
+                  <div class="img--small_1">
+                    <a href="" class="img--small"></a>
+                  </div>
+                  <div class="img--small_2">
+                    <a href="" class="img--small"></a>
+                  </div>
+                  <div class="img--small_3">
+                    <a href="" class="img--small"></a>
+                  </div>
+                  <div class="img--small_4">
+                    <a href="" class="img--small"></a>
+                  </div>
+                  <div class="img--small_5">
+                    <a href="" class="img--small"></a>
+                  </div>
+
+                </div>
+              </div>
+              <div class="col l-8"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Footer -->
+      <footer class="footer">
+        <!-- Header items--mobile -->
+        <div class="header__items--mobile">
+          <div class="grid">
+            <div class="header__items--mobile_list">
+              <div class="item--mobile">
+                <!-- <a id="aday" href="##" class="item--mobile_link link--active " >
+              <i id="iday" class="fa-solid fa-thumbs-up mobile-active"></i>
+              <p id="pday" class=" mobile-active">Gợi Ý Hôm Nay</p>
+            </a> -->
+                <a id="ahome" href="##" class="item--mobile_link">
+                  <i id="ihome" class="fa-solid fa-house mobile-active"></i>
+                  <p id="phome" class="mobile-active">Home</p>
+                </a>
+              </div>
+
+              <div class="item--mobile">
+                <a id="amail" href="##" class="item--mobile_link">
+                  <i id="imail" class="fa-solid fa-envelope"></i>
+                  <p id="pmail" class="">Mail</p>
+                </a>
+              </div>
+
+              <div class="item--mobile">
+                <a id="alive" href="##" class="item--mobile_link">
+                  <i id="ilive" class="fa-solid fa-video"></i>
+                  <p id="plive" class="">Live</p>
+                </a>
+              </div>
+
+              <div class="item--mobile">
+                <a id="athongbao" href="##" class="item--mobile_link"
+                  ><i id="ithongbao" class="fa-solid fa-bell"></i>
+                  <p id="pthongbao" class="">Thông Báo</p></a
+                >
+              </div>
+
+              <div class="item--mobile click-mobile">
+                <a id="atoi" href="##" class="item--mobile_link">
+                  <i id="itoi" class="fa-solid fa-user"></i>
+                  <p id="ptoi" class="">Tôi</p>
+                </a>
+              </div>
+            </div>
+            <!-- <div class="wrapper">
+            <div class="navbar">
+                <div class="navbar__item -blue">
+                    <span class="navbar__icon">
+                        <i class="fa-solid fa-house"></i>
+                    </span>
+                </div>
+                <div class="navbar__item -orange">
+                    <span class="navbar__icon">
+                      <i class="fa-solid fa-envelope"></i>
+                    </span>
+                </div>
+                <div class="navbar__item -navy-blue">
+                    <span class="navbar__icon">
+                      <i class="fa-solid fa-video"></i>
+                    </span>
+                </div>
+                <div class="navbar__item -yellow">
+                    <span class="navbar__icon">
+                      <i class="fa-solid fa-bell"></i>
+                    </span>
+                </div>
+                <div class="navbar__item -purple click-mobile">
+                    <span class="navbar__icon">
+                        <i class="fa-solid fa-user"></i>  
+                    </span>
+                </div>
+            </div>
+        </div> -->
+          </div>
+        </div>
+
+        <div class="grid wide footer__content_mobile">
+          <div class="row">
+            <div class="col l-2-4 m-5 c-6">
+              <!-- Column1 -->
+              <h3 class="footer_heading">Chăm Sóc Khách Hàng</h3>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Trung Tâm Trợ Giúp
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Gin Blog</a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Gin Mall</a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Hướng Dẫn Mua Hàng
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Hướng Dẫn Bán Hàng
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Thanh Toán</a>
+                </li>
+                <!-- <li class="footer__list_item"><a href="" class="footer__list_item--link">Shopee Xu</a></li>                   -->
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Vận Chuyển</a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Trả Hàng & Hoàn Tiền
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Chăm Sóc Khách Hàng
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Chính Sách Bảo Hành
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column2 -->
+            <div class="col l-2-4 m-5 c-6">
+              <h3 class="footer_heading">Về Shopee</h3>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Giới Thiệu Về Gin
+                  </a>
+                </li>
+                <li class="footer__list_item"></li>
+                <a href="" class="footer__list_item--link">Tuyển Dụng</a>
+                <li class="footer__list_item"></li>
+                <a href="" class="footer__list_item--link">Điều Khoản Gin</a>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Chính Sách Bảo Mật
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Chính Hãng </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Kênh Người Bán </a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link">Flash Sales</a>
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Chương Trình Tiếp Thị Liên Kết Gin</a
+                  >
+                </li>
+                <li class="footer__list_item">
+                  <a href="" class="footer__list_item--link"
+                    >Liên Hệ Với Truyền Thông
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!-- Column3 -->
+            <div class="col l-6 m-10 c-10">
+              <!-- Column3.1 -->
+              <h3 class="footer_heading">Thanh Toán</h3>
+              <ul class="footer__list_pay">
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_visa.png"
+                      alt="logo"
+                    />
+                  </a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_logarit.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link"
+                    ><img
+                      src="./assets/img/img_logo_transaction/logo_jcb.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link"
+                    ><img
+                      src="./assets/img/img_logo_transaction/logo_american--exp.png"
+                      alt="logo"
+                    />
+                  </a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_cod.png"
+                      alt="logo"
+                    />
+                  </a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_gop.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_spay.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_pay--item">
+                  <a href="" class="footer__list_pay--item-link">
+                    <img
+                      src="./assets/img/img_logo_transaction/logo_spaylater.png"
+                      alt="logo"
+                  /></a>
+                </li>
+              </ul>
+              <!--Column3.2 -->
+              <h3 class="footer_heading">Vận Chuyển</h3>
+              <ul class="footer__list_transport">
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link"
+                    ><img
+                      src="./assets/img/img_logo_transport/logo_spexp.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_ghtk.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link"
+                    ><img
+                      src="./assets/img/img_logo_transport/logo_ghn.jpg"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_vtp.png"
+                      alt="logo"
+                    />
+                  </a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_vnp.png"
+                      alt="logo"
+                    />
+                  </a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_j&texp.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_grabexp.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_nijav.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_bestexp.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li class="footer__list_transport--item">
+                  <a href="" class="footer__list_transport--item-link">
+                    <img
+                      src="./assets/img/img_logo_transport/logo_be.png"
+                      alt="logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+            <!-- </div> -->
+            <!-- Column4 -->
+            <div class="col l-2-4 m-5 c-5">
+              <h3 class="footer_heading">Theo Dõi Chúng Tôi</h3>
+              <ul class="footer__list">
+                <li class="footer__list_item">
+                  <a
+                    href="https://www.facebook.com/gin.tuan.072/"
+                    class="footer__list_item--link"
+                  >
+                    <i
+                      class="footer__list_item--icon fa-brands fa-square-facebook"
+                    >
+                    </i
+                    >Facebook
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a
+                    href="https://github.com/TuanGinNe"
+                    class="footer__list_item--link"
+                  >
+                    <i class="footer__list_item--icon fa-brands fa-github"> </i
+                    >GitHub
+                  </a>
+                </li>
+                <li class="footer__list_item">
+                  <a
+                    href="https://www.linkedin.com/in/t%E1%BB%AB-qu%E1%BB%91c-tu%E1%BA%A5n-0a42b6218/"
+                    class="footer__list_item--link"
+                    ><i
+                      class="footer__list_item--icon fa-brands fa-linkedin"
+                    ></i>
+                    LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Column5 -->
+            <div class="col l-2-4 m-7 c-7">
+              <h3 class="footer_heading">Tải Ứng Dụng Shopee Ngay Thôi</h3>
+              <div class="footer__download">
+                <img
+                  src="./assets/img/qr_fb.jpg"
+                  alt="Download QR"
+                  class="footer__download_qr"
+                />
+                <div class="footer__download_apps">
+                  <a href="" class="download__apps_link">
+                    <img
+                      src="./assets/img/gg_store.png"
+                      alt="Google Play"
+                      class="download__apps_img"
+                    />
+                  </a>
+                  <a href="" class="download__apps_link">
+                    <img
+                      src="./assets/img/app_store.png"
+                      alt="App Store"
+                      class="download__apps_img"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Bottom1 -->
+          <div class="footer__bottom_list1_items">
+            <div class="footer__bottom_list1_items--permission">
+              <p>© 2022 GinT. Tất cả các quyền được bảo lưu.</p>
+            </div>
+            <!-- Quốc Gia -->
+            <div class="footer__bottom_list1_items--country">
+              <!-- Quốc Gia và Khu Vực-->
+              <div class="footer__bottom_list1_items--country-area">
+                <div class="footer__bottom_list1_items--country-area1">
+                  <p>Quốc Gia Và Khu Vực :</p>
+                </div>
+              </div>
+              <!-- Quốc Gia List -->
+              <div class="footer__bottom_list1_items--country-list">
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Việt Nam</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Singapore</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Indonesia</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Đài Loan</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Thái Lan</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Malaysia</a
+                  >
+                </div>
+                <div class="footer__bottom_list1_items--country-real">
+                  <a href="" class="footer__bottom_list1_items--country-real_1"
+                    >Philippin</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer Bottom2 -->
+        <div class="footer__bottom">
+          <div class="grid wide">
+            <div class="footer__bottom_list">
+              <!-- Firt Footer -->
+              <ul class="footer__bottom_list--items">
+                <li class="footer__bottom_list--items-link">
+                  <a href="" class="footer__bottom_list--items-link_1"
+                    >Chính Sách Bảo Mật</a
+                  >
+                </li>
+                <li class="footer__bottom_list--items-link">
+                  <a href="" class="footer__bottom_list--items-link_1"
+                    >Quy Chế Hoạt Động</a
+                  >
+                </li>
+                <li class="footer__bottom_list--items-link">
+                  <a href="" class="footer__bottom_list--items-link_1"
+                    >Chính Sách Vận Chuyển</a
+                  >
+                </li>
+                <li class="footer__bottom_list--items-link">
+                  <a href="" class="footer__bottom_list--items-link_1"
+                    >Chính Sách Trả Hàng Và Hoàn Tiền</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- Second Footer -->
+            <!-- <div class="footer__bottom_logo">
+            </div> -->
+            <!-- Third Footer -->
+            <div class="footer__company">
+              <p class="footer__company_text">Công ty TNHH GIN Entertainment</p>
+            </div>
+            <p class="footer__text">
+              Địa chỉ: - Email: tuquoctuan071102@gmail.com.
+            </p>
+            <p class="footer__text">
+              ©Chịu Trách Nhiệm Quản Lý Nội Dung: Từ Quốc Tuấn - Điện thoại liên
+              hệ: Chưa Có
+            </p>
+            <!-- <p class="footer__text">Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015</p> -->
+            <p class="footer__text">
+              © 2022 - Bản quyền thuộc về ShoppeVN - Mượn Thiết Kế Từ Quốc Tuấn
+            </p>
+          </div>
+        </div>
+      </footer>
+      <div id="toast"></div>
+    </div>
+
+    <script src="./assets/JavaScript/message.js"></script>
+    <script src="./assets/JavaScript/messagetitle.js"></script>
+    <script src="./assets/JavaScript/tabLine.js"></script>
+    <script src="./assets/JavaScript/fromSuccess.js"></script>
+    <script src="./assets/JavaScript/vailtor.js"></script>
+    <script src="./assets/JavaScript/sliderBanner.js"></script>
+    <script src="./assets/JavaScript/inputShop.js"></script>
+    <script src="./assets/JavaScript/SrollPage.js"></script>
+    <script src="./assets/JavaScript/style.js"></script>
+  </body>
+</html>

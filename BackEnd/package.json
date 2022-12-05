@@ -1,0 +1,22 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "backend shopee",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --inspect  src/index.js",
+    "watch": "sass  --style compressed -w src/resources/scss/app.scss:src/public/css/app.css,src/resources/scss/responsive.scss:src/public/css/responsive.css,src/resources/scss/grid.scss:src/public/css/grid.css, src/resources/scss/base.scss:src/public/css/base.css,src/resources/scss/footer.scss:src/public/css/footer.css ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Tuấn",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.20",
+    "sass": "^1.56.1"
+  }
+}
