@@ -315,8 +315,8 @@ Selection */
   background-color: var(--primary-color);
 }
 
-.pagination__item_active .pagination__item--link:hover {
-  background-color: #ed5c3f;
+.pagination__item .pagination__item--link:hover {
+  color: var(--primary-color);
 }
 
 .pagination__item--link {
