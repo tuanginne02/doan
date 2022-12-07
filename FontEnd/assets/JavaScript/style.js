@@ -150,6 +150,9 @@ function clickTabletExitUser() {
 //Mobile
 function clickMobileExitUser() {
   showUserMobile.classList.remove("showMobileUser");
+  modalRegister.classList.remove("show");
+  modalLogin.classList.remove("show");
+  formMobie.classList.remove("showMobile");
 }
 clickExitUserMobile.addEventListener("click", clickMobileExitUser);
 //bottom number
@@ -174,8 +177,16 @@ btnMobileLogin.addEventListener("click", showModalLoginMobile);
 modalCloseRegister.addEventListener("click", hideModal);
 modalCloseLogin.addEventListener("click", hideModal);
 
-//hide All modal
-modal.addEventListener("click", hideModal);
+//hiden modal mobile
+const closeMobile = document.querySelector(".close_mobile");
+closeMobile.addEventListener("click", hideModal);
+
+//click growUp
+modal.addEventListener("click", clickGrowUpModal);
+function clickGrowUpModal() {
+  modalRegister.classList.add("growUp");
+  modalLogin.classList.add("growUp");
+}
 
 modalBody.addEventListener("click", function (e) {
   e.stopPropagation();
@@ -206,6 +217,11 @@ function showSuccess() {
     showErrorToastLogin();
   }
 }
+var regexName =
+  /^^[a-zA-ZÀÁÂÃÈÉÊÌÍÒÓÔÕÙÚĂĐĨŨƠàáâãèéêìíòóôõùúăđĩũơƯĂẠẢẤẦẨẪẬẮẰẲẴẶẸẺẼỀỀỂẾưăạảấầẩẫậắằẳẵặẹẻẽềềểếỄỆỈỊỌỎỐỒỔỖỘỚỜỞỠỢỤỦỨỪễệỉịọỏốồổỗộớờởỡợụủứừỬỮỰỲỴÝỶỸửữựỳỵỷỹ\s\W|_]+$/;
+var regexPhone = /(84|0[3|5|7|8|9])+([0-9]{8})\b/g;
+var regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+var min = 6;
 //clear values input
 function clearInputLogin() {
   document.getElementById("form__login").reset();
@@ -223,24 +239,32 @@ submitLogin.addEventListener("click", (e) => {
     (userName === "tuangin@gmail.com" && password === "123456") ||
     (userName === "gin@gmail.com" && password === "098765")
   ) {
-    console.log("Đăng Nhập Thành Công");
-    // alert("Đăng Nhập Thành Công");
     showSuccessToastLogin();
     hideShowTabletSubmitLogin();
     hideShowSubmitLogin();
     hideShowMobileSubmitLoginRegister();
-    clearInputLogin();  
+    clearInputLogin();
     return true;
+  } else if (userName === "") {
+    showInforToastRegiterEmail();
+    return false;
+  } else if (!userName.match(regexEmail)) {
+    showWarningToastRegiterEmail();
+    return false;
+  } else if (password === "") {
+    showInforToastRegiterPassword();
+    return false;
+  } else if (password.length < min) {
+    showWarningToastRegiterPassword();
+    return false;
   } else {
     attempt--;
     showSuccess();
-    console.log("Đăng Nhập khong Thành Công");
     if (attempt === 0) {
       document.getElementById("emails").disabled = true;
       document.getElementById("password").disabled = true;
       document.getElementById("submit-login").disabled = true;
       dsBtnColor.classList.add("disable");
-      console.log("chặn đăng nhập  Thành Công");
       return modal.classList.remove("open");
     }
   }
@@ -255,6 +279,7 @@ submitRegister.addEventListener("click", (e) => {
   const passConfirmation = document.getElementById(
     "password_confirmation"
   ).value;
+
   if (
     fullName !== "" &&
     phoneNumber !== "" &&
@@ -263,24 +288,44 @@ submitRegister.addEventListener("click", (e) => {
     passConfirmation !== "" &&
     passConfirmation === passwords
   ) {
-    console.log("Đăng Ký Thành Công");
     showSuccessToastRegiter();
     hideShowTabletSubmitRegister();
     hideShowSubmitRegister();
     hideShowMobileSubmitLoginRegister();
     clearInputRegiter();
     return true;
+  } else if (
+    fullName === "" &&
+    phoneNumber === "" &&
+    email === "" &&
+    passwords === "" &&
+    passConfirmation === ""
+  ) {
+    showErrorToast();
+    return false;
   } else if (fullName === "") {
     showInforToastRegiterName();
+    return false;
+  } else if (!fullName.match(regexName)) {
+    showWarningToastRegiterName();
     return false;
   } else if (phoneNumber === "") {
     showInforToastRegiterSDT();
     return false;
+  } else if (!phoneNumber.match(regexPhone)) {
+    showWarningToastRegiterSDT();
+    return false;
   } else if (email === "") {
     showInforToastRegiterEmail();
     return false;
+  } else if (!email.match(regexEmail)) {
+    showWarningToastRegiterEmail();
+    return false;
   } else if (passwords === "") {
     showInforToastRegiterPassword();
+    return false;
+  } else if (passwords.length < min) {
+    showWarningToastRegiterPassword();
     return false;
   } else if (passConfirmation === "" || passConfirmation !== passwords) {
     showInforToastRegiterPasswordCom();
@@ -291,14 +336,9 @@ submitRegister.addEventListener("click", (e) => {
   }
 });
 
-function myFunction() {
-  var element = document.body;
-  element.classList.toggle("dark-mode");
-}
+// clear filters
 
-// clear filters 
-
-const btnClearFilters = document.querySelector(".btn--clear-filter")
+const btnClearFilters = document.querySelector(".btn--clear-filter");
 
 btnClearFilters.addEventListener("click", () => {
   document.getElementById("from-fillter1").reset();
@@ -310,5 +350,4 @@ btnClearFilters.addEventListener("click", () => {
   document.getElementById("from-fillter7").reset();
   document.getElementById("from-fillter8").reset();
   document.getElementById("from-fillter9").reset();
-
-})
+});

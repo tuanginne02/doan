@@ -543,7 +543,9 @@
     animation: faceIn linear 0.1s;
     display: none;
   }
-
+  /* .modal.open {
+    display: none;
+  } */
   #form__register {
     width: 300px;
     margin-top: 100px;
