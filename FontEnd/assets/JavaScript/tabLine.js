@@ -22,15 +22,14 @@ tabs.forEach((tab) => {
 
 // number bottom content
 
-let likeButtons = document.querySelectorAll(".lirke");
-const btnLikes = document.querySelectorAll(".btn-heart");
-const idLike = document.getElementById("1,2,2")
-likeButtons.forEach((ele) => {
+let likeButtons = document.getElementsByClassName("lirke");
+const btnLikes = document.getElementsByClassName("btn-heart");
+Array.from(likeButtons).forEach((ele) => {
   ele.addEventListener("click", likeButtonClick);
 });
 // Add class on button click
 function likeButtonClick() {
-  btnLikes.forEach((ele) => {
+  Array.from(btnLikes).forEach((ele) => {
     ele.classList.toggle("btn-like");
   });
 }
