@@ -245,7 +245,10 @@ submitLogin.addEventListener("click", (e) => {
     hideShowMobileSubmitLoginRegister();
     clearInputLogin();
     return true;
-  } else if (userName === "") {
+  }  else if(userName === "" && password === "") {
+    showWarningAllToastLogin();
+   } 
+  else if (userName === "") {
     showInforToastRegiterEmail();
     return false;
   } else if (!userName.match(regexEmail)) {
@@ -257,7 +260,7 @@ submitLogin.addEventListener("click", (e) => {
   } else if (password.length < min) {
     showWarningToastRegiterPassword();
     return false;
-  } else {
+   }else {
     attempt--;
     showSuccess();
     if (attempt === 0) {

@@ -23,7 +23,7 @@ function showSuccessToastLogin() {
       duration: 5000
     });
   }
-  function showWarningToastLogin() {
+  function showWarningAllToastLogin() {
     toast({
       title: "Thất bại!",
       message: "Vui Lòng Nhập Email Và Mật Khẩu",
